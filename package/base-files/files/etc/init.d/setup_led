@@ -1,7 +1,7 @@
 #!/bin/sh /etc/rc.common
 # Copyright (C) 2008 OpenWrt.org
 
-START=96
+START=99
 
 load_led() {
 	local name
@@ -34,6 +34,8 @@ load_led() {
 
 	[ -e /sys/class/leds/${sysfs}/brightness ] && {
 		echo "setting up led ${name}"
+
+		[ \! -f /sys/class/leds/${sysfs}/autonomous ] || echo 0 > /sys/class/leds/${sysfs}/autonomous
 
 		[ "$default" = 0 ] &&
 			echo 0 >/sys/class/leds/${sysfs}/brightness
