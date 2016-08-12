@@ -16,6 +16,8 @@ fuse-utils
 hd-idle
 hdparm
 hfsfsck
+kmod-ata-core
+kmod-ata-ahci
 kmod-crypto-aead
 kmod-crypto-authenc
 kmod-crypto-cbc
@@ -125,6 +127,7 @@ mkdosfs
 mkhfs
 mountd
 mount-utils
+nfs-kernel-server
 nfs-kernel-server-utils
 ntfs-3g
 ntfs-3g-utils
