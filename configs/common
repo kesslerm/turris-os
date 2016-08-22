@@ -116,6 +116,10 @@ CONFIG_SOCAT_SSL=y
 
 #collectd support
 CONFIG_PACKAGE_collectd=y
+CONFIG_PACKAGE_collectd-mod-interface=y
+CONFIG_PACKAGE_collectd-mod-load=y
+CONFIG_PACKAGE_collectd-mod-memory=y
+CONFIG_PACKAGE_collectd-mod-network=y
 CONFIG_PACKAGE_collectd-mod-sensors=y
 CONFIG_PACKAGE_collectd-mod-snmp=y
 CONFIG_PACKAGE_collectd-mod-syslog=y
